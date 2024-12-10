@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Report</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+        rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <div class="wrapper">
-
         <h1>Weather App</h1>
 
         <div class="tab-container">
@@ -24,7 +23,7 @@
 
         <div class="weather-container">
 
-            <!-- grant location container-->
+            <!-- Grant Location Access -->
             <div class="sub-container grant-location-container">
                 <img src="./assets/location.png" width="80" height="80" loading="lazy">
                 <p>Grant Location Access</p>
@@ -32,76 +31,72 @@
                 <button class="btn" data-grantAccess>Grant Access</button>
             </div>
 
-            <!-- search form -> form-container-->
+            <!-- Search Form -->
             <form class="form-container" data-searchForm>
                 <input placeholder="Search for City..." data-searchInput>
                 <button class="btn" type="submit">
-                    <img src="./assets/search.png"  width="20" height="20" loading="lazy">
+                    <img src="./assets/search.png" width="20" height="20" loading="lazy">
                 </button>
             </form>
 
-            <!--- loading screen container -->
+            <!-- Loading Screen -->
             <div class="sub-container loading-container">
                 <img src="./assets/loading.gif" width="150" height="150">
                 <p>Loading</p>
             </div>
 
-            <!-- show weather info -->
+            <!-- Show Weather Info -->
             <div class="sub-container user-info-container">
 
-                <!--city name and Flag-->
+                <!-- City Name and Flag -->
                 <div class="name">
                     <p data-cityName></p>
                     <img data-countryIcon>
                 </div>
 
-                <!-- weather descriptuion-->
+                <!-- Weather Description -->
                 <p data-weatherDesc></p>
-                <!--weather Icon-->
+                <!-- Weather Icon -->
                 <img data-weatherIcon>
-                <!--temperature-->
+                <!-- Temperature -->
                 <p data-temp></p>
 
-                <!--3 cards - parameters-->
+                <!-- Weather Parameters -->
                 <div class="parameter-container">
 
-                    <!--card 1-->
+                    <!-- Windspeed Card -->
                     <div class="parameter">
-                        <img src="./assets/wind.png" >
-                        <p>windspeed</p>
+                        <img src="./assets/wind.png">
+                        <p>Windspeed</p>
                         <p data-windspeed></p>
                     </div>
 
-                    <!--card 2-->
+                    <!-- Humidity Card -->
                     <div class="parameter">
-                        <img src="./assets/humidity.png" >
-                        <p>humidity</p>
+                        <img src="./assets/humidity.png">
+                        <p>Humidity</p>
                         <p data-humidity></p>
                     </div>
 
-                    <!--card 3-->
+                    <!-- Cloudiness Card -->
                     <div class="parameter">
-                        <img src="./assets/cloud.png" >
+                        <img src="./assets/cloud.png">
                         <p>Clouds</p>
                         <p data-cloudiness></p>
                     </div>
 
                 </div>
-
-
             </div>
 
-
+            <!-- City Not Found Placeholder -->
+            <div class="sub-container not-found-container" style="display: none;">
+                <img src="./assets/not-found.png" alt="City Not Found" width="150" height="150">
+                <p style="font-size: 1.5rem; text-align: center;">City Not Found</p>
+            </div>
 
         </div>
-
-
-        
-
     </div>
 
-
     <script src="index.js"></script>
-    
 </body>
 </html>
