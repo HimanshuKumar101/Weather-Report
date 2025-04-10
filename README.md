@@ -29,6 +29,5 @@ A responsive and user-friendly Weather App built with **HTML**, **CSS**, and **J
 ## 🛠 How to Run the Project
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/HimanshuKumar101/Weather-Report.git
    cd weather-app
